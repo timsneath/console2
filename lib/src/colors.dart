@@ -1,3 +1,4 @@
+/// The named ANSI/VT100 colors.
 enum NamedColors {
   black,
   red,
@@ -17,7 +18,8 @@ enum NamedColors {
   brightWhite
 }
 
-const ForegroundColors = {
+/// A list of ANSI/VT100 color codes for foreground colors.
+const Map<NamedColors, int> foregroundColors = {
   NamedColors.black: 30,
   NamedColors.red: 31,
   NamedColors.green: 32,
@@ -36,7 +38,8 @@ const ForegroundColors = {
   NamedColors.brightWhite: 97
 };
 
-const BackgroundColors = {
+/// A list of ANSI/VT100 color codes for background colors.
+const Map<NamedColors, int> backgroundColors = {
   NamedColors.black: 40,
   NamedColors.red: 41,
   NamedColors.green: 42,
